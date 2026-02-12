@@ -3660,3 +3660,15 @@ body {
     font-weight: 500;
     letter-spacing: 0.05rem;
 }
+/* HEADER BACKGROUND IMAGE FOR FASHION STORE */
+.header-wrapper {
+    background-image: url('YOUR_IMAGE_URL_HERE'); /* Yahan bag ya jewellery ki achi image ka link dalein */
+    background-size: cover;
+    background-position: center;
+    color: white !important;
+}
+
+/* Menu links ko white karne ke liye */
+.header__menu-item span, .header__icon {
+    color: white !important;
+}

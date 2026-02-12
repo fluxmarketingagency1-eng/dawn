@@ -3732,4 +3732,18 @@ body {
 .card-wrapper:hover .quick-add {
     opacity: 1;
 }
+  /* LUXURY THEME OVERLAY */
+:root { --accent-color: #b8860b; } /* Gold color for Jewelry */
+
+.header-wrapper { background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+.button { border-radius: 0; text-transform: uppercase; font-weight: 700; letter-spacing: 2px; transition: 0.3s; }
+.button:hover { background: var(--accent-color); color: white; }
+
+/* Product Zoom & Hover like Video */
+.card__media img { transition: transform 0.8s ease; }
+.card-wrapper:hover .card__media img { transform: scale(1.1); }
+.card__heading { font-family: serif; font-size: 1.8rem !important; }
+
+/* Categories circular shape (Mobile App Style) */
+.collection-list .card__media { border-radius: 50%; border: 2px solid #eee; }
   

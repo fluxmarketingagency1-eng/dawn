@@ -3595,3 +3595,68 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+/* --- MODERN PRO STORE OVERHAUL --- */
+
+/* 1. TYPOGRAPHY & SPACING (Premium Look) */
+body {
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.01em; 
+}
+
+/* 2. MODERN BUTTONS (Soft corners & Hover effect) */
+.button, .shopify-payment-button__button, .customer-button {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    border-radius: 4px !important; 
+    border: none;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* 3. PRODUCT CARDS (Clean Shadow & Zoom) */
+.card-wrapper {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-wrapper:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card__inner {
+    transition: transform 0.5s ease;
+}
+
+.card-wrapper:hover .card__inner {
+    transform: scale(1.03);
+}
+
+/* 4. PRO HEADER WITH GLASSMORPHISM */
+/* Jab aap scroll karenge toh header transparent glass jaisa dikhega */
+.shopify-section-header-sticky .header-wrapper {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* 5. SALE BADGE (Luxury Style) */
+.badge--bottom-left {
+    border-radius: 20px !important;
+    padding: 6px 15px !important;
+    background-color: #000 !important; 
+    color: #fff !important;
+    font-weight: bold;
+}
+
+/* 6. CLEANER ANNOUNCEMENT BAR */
+.announcement-bar {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}

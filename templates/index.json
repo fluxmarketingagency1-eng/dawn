@@ -217,3 +217,39 @@
   },
   "order": ["banner", "categories", "featured_products", "rich_text"]
 }
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "image_height": "medium"
+      }
+    },
+    "categories": {
+      "type": "collection-list",
+      "settings": {
+        "title": "Our Categories",
+        "columns_desktop": 3
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Trending Fashion",
+        "products_to_show": 4
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "settings": {
+        "heading": "Luxury Ladies Footwear & Jewelry"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "categories",
+    "featured_collection",
+    "rich_text"
+  ]
+}

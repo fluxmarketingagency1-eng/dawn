@@ -3714,8 +3714,22 @@ body {
     font-size: 1.4rem !important;
     margin-top: 15px;
 }
+.collection-list__item .card__content {
+    text-align: center;
+    background: rgba(255,255,255,0.9);
+    margin: 10px;
+    border-radius: 5px;
 
 /* 4. Images ko thoda soft dikhana */
 .collection-list .card__media {
     filter: brightness(0.95);
 }
+  /* Product Card Icons on Hover */
+.card__inner .quick-add {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.card-wrapper:hover .quick-add {
+    opacity: 1;
+}
+  

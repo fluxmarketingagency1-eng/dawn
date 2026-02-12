@@ -3672,3 +3672,20 @@ body {
 .header__menu-item span, .header__icon {
     color: white !important;
 }
+/* Product Image Border & Luxury Feel */
+.card__media {
+    border: 1px solid #f0f0f0;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card__heading {
+    font-family: 'Playfair Display', serif; /* Agar font available ho */
+    font-size: 1.6rem !important;
+    text-transform: capitalize;
+}
+
+/* Price ko highlight karne ke liye */
+.price-item--regular {
+    color: #b8860b !important; /* Gold color for luxury items like jewelry */
+    font-weight: bold;
+}
